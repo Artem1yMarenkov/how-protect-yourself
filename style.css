@@ -1,0 +1,216 @@
+/* 'Mentserrat' font Connecting */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+html{
+    scroll-behavior: smooth;
+    cursor: url('cursor-state.png');
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: black;
+    color: white;
+}
+p{
+    color: rgb(165, 165, 165);
+}
+.progress{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 0%;
+    height: 5px;
+    background-color: rgb(211, 41, 41);
+}
+.upButton{
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    background-color: rgb(211, 41, 41);
+    border-radius: 100%;
+    font-weight: bold;
+    color: black;
+    right: 50px;
+    bottom: 60px;
+    transition: width 0.2s;
+}
+.upButton img{
+    width: 40px;
+}
+.upButton:hover{
+    text-decoration: none;
+}
+::-webkit-scrollbar{
+    width: 0px;
+}
+span{
+    color: rgb(211, 41, 41);
+}
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    position: relative;
+}
+nav a{
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+nav a::before{
+    display: block;
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 0;
+    background-color: rgb(211, 41, 41);
+    transition: width .5s ease-in-out, left .5s ease-in-out;
+    left: 50%;
+    bottom: 0;
+}
+nav a::after{
+    display: block;
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 0;
+    background-color: rgb(211, 41, 41);
+    transition: width .5s ease-in-out;
+    left: 50%;
+    bottom: 0;
+}
+nav a:hover::before{
+    width: 50%;
+    left: 0;
+}
+nav a:hover::after{
+    width: 50%;
+}
+nav a:hover{
+    text-decoration: none;
+    color: white;
+}
+main .container{
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+main .container .right-side{
+    max-width: 600px;
+}
+main .container .right-side p{
+    color: rgb(165, 165, 165);
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+._main-button{
+    position: relative;
+    color: rgb(211, 41, 41);
+    padding: 15px 20px 15px 20px;
+    border-radius: 30px;
+    border: 2px solid rgb(211, 41, 41);
+    transition: ease-in-out 0.5s;
+}
+._main-button:hover{
+    text-decoration: none;
+    color: black;
+    background-color:  rgb(211, 41, 41);
+}
+.arrow-down {
+    width: 42px;
+    margin: auto;
+}
+.arrow-down span {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-bottom: 3px solid rgb(211, 41, 41);
+    border-right: 3px solid rgb(211, 41, 41);
+    transform: rotate(45deg);
+    margin: -16px;
+    animation: arrow-down 2s infinite;
+}
+.arrow-down span:nth-child(2){
+    animation-delay: -0.2s;
+}
+.arrow-down span:nth-child(3){
+    animation-delay: -0.4s;
+}
+@keyframes arrow-down {
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px,-20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20px,20px);
+    }
+}
+
+article h1{
+    text-align: center;
+    margin-bottom: 100px;
+    padding-top: 80px;
+    margin-top: 100px;
+}
+.kinds-of{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+    .kinds-of .advice{
+        max-width: 320px;
+        height: 320px;
+        display: flex;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+        .kinds-of .advice h4{
+            font-weight: bold;
+            margin-bottom: 20px;
+            line-height: 32px;
+        }
+.how-protect{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+    .how-protect .advice{
+        max-width: 920px;
+        display: flex;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+        .how-protect .advice h3{
+            font-weight: bold;
+            margin-bottom: 20px;
+            line-height: 36px;
+        }
+        .advice .num{
+            color: rgb(211, 41, 41);
+            width: 50px;
+            height: 40px;
+        }
+footer{
+    width: 960px;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    font-size: 90%;
+}
+    footer hr{
+        background-color: rgb(211, 41, 41);
+    }
