@@ -211,6 +211,6 @@ footer{
     padding-bottom: 80px;
     font-size: 90%;
 }
-    footer hr{
+hr{
         background-color: rgb(211, 41, 41);
-    }
+}
